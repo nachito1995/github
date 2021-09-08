@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+
+
+.logo {
+    width: 200px;
+    display: flex;
+    margin-left: 0;
+}
+
+/*MENU*/
+.navegacion {
+    width: 100%;
+    margin: 30px auto;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    
+}
+    
+
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    
+
+}
+
+.navegacion ul {
+    list-style: none;
+    
+}
+
+.menu > li {
+    position: relative;
+    display: inline-block;
+    font-size: 30px;
+}
+
+
+
+.menu > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+    
+}
+
+.menu li a:hover {
+    color: lightblue;
+    transition: all .4s;
+    transform: scale(1.2);
+}
+
+/* SUBMENU */
+
+.subMenu {
+    position: absolute;
+    background: grey;
+    width: 130%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.subMenu li a {
+    display: block;
+    padding: 15px;
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+
+}
+
+
+.menu li:hover .subMenu {
+    visibility: visible;
+    opacity: 1;
+
+}
+
+/* TIENDA */
+
+.grid-container {
+    display: grid;
+    grid-template-columns:repeat(4, 300px);
+    grid-column-gap: 10px;
+    align-items: center;
+    justify-content: space-around;
+    max-height: 250%;
+    grid-template-rows: 1fr;
+}
+
+/* TRANSITION Y TRANSFORM */
+.grid-item:hover {
+    transform: scale(1.4);
+    transition: all 1.5s;
+    
+}
+.grid-container > div {
+    width: 100%;
+}
+
+.grid-container > div > img {
+    width: 100%;
+}
+
+
+.remera {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3%;
+    color: grey;
+}
+
+
+
+/*COLOR FONDO*/
+body {
+    background-color: black;
+    
+}
+/*IMAGENES*/
+
+
+.fotos-contenedor {
+    display: flex;
+    justify-content: center;
+}
+.foto-uno {
+    display: flex;
+}
+.foto-dos {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+/*DISCOGRAFIA*/
+.primer-disco:hover {
+    transform: translateX(700px);
+    transition: 2s;
+}
+     
+
+
+
+
+/*TEXTOS*/
+h1 {
+    color: white;
+    font-size: 44px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+/*FOOTER*/
+#fuente-footer {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    
+}
+
+p {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 22px;
+    color: white;
+
+}
